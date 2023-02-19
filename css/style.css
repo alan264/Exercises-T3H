@@ -1,0 +1,41 @@
+*{
+    margin: 40;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: brown;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    line-height: 0%;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    float: none;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.sidebar{
+    float: left;
+    width: 33%;
+}
+
+.content{
+    float: left;
+    width: 67%;
+}
+
