@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#first{
+    color: rgb(244, 30, 30);
+}
+
+h2.s2{
+    color: rgb(55, 0, 255);
+    font-size: 40px;
+}
