@@ -1,0 +1,22 @@
+
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    float: none;
+    margin: 20px 20px 40px 40px;
+}
+.right{
+    float: left;
+    width: 60%;
+}
+
+.left{
+    float: left;
+    width: 39%;
+}
+.card{
+    margin: 20px;
+}
