@@ -1,0 +1,171 @@
+/* #555555 xám 
+#E97163 cam
+#EA3830 đỏ
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    background-color: #EFEFEF;
+}
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 5px;
+    font-size: 20px;
+}
+.logo1, .logo-txt{
+    color: #EA3830;
+    float: left;
+    padding: 10px;
+}
+.logo2{
+    padding: 10px;
+}
+
+/* TRAVEL */
+.mau{
+    background-image:  url(/IMG/lab4-2/london2.png);
+    width: 100%;    
+}
+.travel-giua{
+    margin: 160px 0;
+    background-color: white;
+}
+.dong1{
+    background-color: black;
+    color: white;
+}
+.dong1 i{
+    float: left;
+    margin: 0 18px;
+}
+.txt-h1{
+    font-size: 28px;
+    margin: 25px 0 10px;
+}
+.fli,.htel{
+    width: 120px;
+}
+.fli, .htel, .ren{
+    padding-top: 8px;
+}
+.fli:hover, .htel:hover, .ren:hover{
+    background-color: #EA3830;
+}
+.ren:hover{
+    width: 120px;
+}
+.btn-search{
+    width: 200px;
+    background-color: #555555;
+    margin: 15px 12px 25px;
+    /* border: 1px solid; */
+}
+
+/* -----SECTION----- */
+.card{
+    width: 100%;
+    border: none;
+}
+.card-1{
+    position: relative;
+    
+}
+.txt-card-1{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 120px;
+    color:white;
+}
+.txt-card{
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-left: 18px;
+}
+.txt-buy{
+    margin-left: 20px;
+}
+
+/* --------OFFERS--------- */
+.btn-sub{
+    background-color: #E97163;
+    color: white;
+    margin: 20px 0
+}
+.offer{
+    margin-top: 30px;
+    padding: 20px 20px 10px;
+    background-color: #555555;
+    color: white;
+}
+
+/* ------CONTACT------ */
+.ico{
+    width: 45px;
+}
+.btn-mess{
+    background-color: black;
+    color: white;
+    border-radius: none;
+    border-radius: 0;
+}
+.inp{
+    border: 1px solid;
+    opacity: 0.7;
+    border-radius: 0;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #EFEFEF;
+}
+.footer-giua{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.ft-icon{
+    float: left;
+    margin-bottom: 20px;
+}
+.ft-txt{
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+
+/* @media screen and (min-width:576px) {
+    .card-tong{
+        width: 560px;
+    }
+    .card-cha{
+        width: 100%;
+    }
+    /* .btn-menu{display: none;}
+    .menu{display: block;} 
+}
+
+@media screen and (min-width:992px) {
+    .card-tong{
+        width: 990px;
+    }
+    .card-cha{
+        width: 33.3333%;
+    }
+}
+@media screen and (min-width:1280px) {
+    .card-tong{
+        width: 1200px;
+    }
+    .card-cha{
+        width: 50%;
+    }
+} */
