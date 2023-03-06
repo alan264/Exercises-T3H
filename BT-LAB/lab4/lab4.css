@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    position:fixed ;
+    top: 0;
+    left: 0;
+    /* margin: 15px 0px; */
+    z-index: 10;
+    background-color: white;
+}
+.container{
+    /* margin-top: 20px; */
+}
+.food, .mail{
+    text-align: center;
+    font-size: 25px;
+
+}
+.btn-menu{
+    font-size: 30px;
+    color: black;
+    padding-left: 40px;
+}
+.mail{
+    text-align: right;
+    padding-right: 40px;
+}
+.card{
+    text-align: center;
+    border: none;
+}
+.card h1{
+    font-size: 20px;
+    margin: 5px 0px 10px 0px;
+    
+}
+.about h1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.txt{
+    text-align: center;
+    margin-bottom: 7rem;
+}
+.ft-txt{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.the2{
+    background-color: #616161;
+    color: white;
+    text-decoration: none;
+}
+.the2:hover{
+    background-color: black;
+}
+
+.pagination{
+    margin-left: 25px;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+/* set the style for the active class */
+.pagination a.active {
+    background-color: black;
+    color: white;
+}
+
+/* add background color when user hovers on inactive class */
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
