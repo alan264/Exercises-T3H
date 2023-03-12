@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* text-align: center; */
+    margin-top: 250px;
+}
+#tt{
+    float: left;
+    margin-right: 10px;
+}
+.ds{
+    /* text-align: center; */
+}
+#rd1, #rd2, #rd3, #rd4,#rd5, #rd6{
+    margin-right: 50px;
+    float: left;
+}
+
+
+
+/* .so-tg{
+    margin-top: 30px; 
+    float: left;
+} */

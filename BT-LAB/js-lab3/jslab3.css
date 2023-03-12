@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================LEFT================ */
+.left{
+    background-color: #78B43D;
+    color: white;
+}
+.left-logo{
+    background-color: #8BC52B;
+}
+.logo{
+    width: 100%;
+}
+.logo-nha{
+    width: 20px;
+
+}
+.oo p{
+    font-size: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.dmuc{
+    text-align: center;
+}
+.dmuc p{
+    font-size: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.left-dmuc:hover{
+    background-color: #609A26;
+}
+/* #78B43D */
+/* #609A26 hover*/
+/* ================RIGHT================ */
+.right{
+    background-color: #78B43D;
+    color: white;
+}
+.oo{
+    text-align: center;
+}
+.oo:hover{
+    background-color: #609A26;
+}
+.o-timkiem{
+    padding-top: 1%;
+}
+
+/* ================HOVER================ */
+#hv-dmuc{
+    width: 170px;
+    /* height: 600px; */
+    background-color: #AAD862;
+    margin-left: 8%;
+    /* text-align: center; */
+    display: none;
+}
+.item{
+    float: left;
+}
+.ds-dmuc{
+    margin-left: 5px;
+    padding: 5px;
+}
+.ds-dmuc p{
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.ds-dmuc i{
+    margin-top: 5px;
+    margin-right: 5px;
+    color: white;
+}
+.ds-dmuc:hover{
+    background-color: #609A26;
+    color: white;
+}
