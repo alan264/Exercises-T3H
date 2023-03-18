@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: #00BDE5;
+    /* background-color:#057FA2; */
+    color: white;
+}
+/* ===============LEFT================== */
+.anh-ndo img{
+    width: 100%;
+}
+.txt-p p{
+    margin-bottom: 0;
+}
+.txt-p{
+    margin: 25px 0;
+}
+.ico-vitri{
+    text-align: center;
+    margin-top: 10px;
+}
+.card-left{
+    margin: 20px 0;
+}
+
+
+/* ===============CENTER================== */
+.giua img{
+    width: 100%;
+}
+.giua p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ===============RIGHT================== */
+.right{
+    margin-top: 15px;
+}
+.right-text p{
+    margin-bottom: 2px;
+}
+.right h2{
+    text-align: right;
+    margin-right: 15px;
+}
+.r-content{
+    margin: 30px 0 0 0px;
+}
+
+/* ===============FOOTER================== */
+.footer{
+    /* background-color: #22c0df; */
+}
+.day-col{
+    width: 14.28%;
+    height: 100%;
+    float: left;
+    background-color: #01a9cb;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.day-col img{
+    width: 100%;
+}
+.day-col p{
+    margin-bottom: 1px;
+}

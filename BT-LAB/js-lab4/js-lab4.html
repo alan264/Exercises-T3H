@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JS LAB4</title>
+    <link rel="stylesheet" href="/LIB/bootstrap 5.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js-lab4.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 main">
+                    <div class="row">
+
+                        <!-- =====================LEFT============================= -->
+
+                        <div class="col-4">
+                            <div class="card-left">
+                                <div class="row">
+                                    <div class="col-4 ico-vitri">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <h2>Seattle</h2>
+                                        <div class="txt-p">
+                                            <p>September 15</p>
+                                            <p>Monday</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div id="ico" class="col-4 anh-ndo">
+                                        <img src="https://lin.com.vn/wp-content/uploads/2017/01/temperature-2-128.png"
+                                            alt="">
+                                    </div>
+                                    <div class="col-8">
+                                        <h1 id="temp">25</h1>
+                                        <p id="temp-flike">Feels like 23°</p>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- =====================CENTER============================= -->
+
+                        <div class="col-4 giua">
+                            <img src="https://thoitiet.app/assets/images/weather-1/02d.png" alt="">
+                            <p id="des">cloudy</p>
+                        </div>
+
+                        <!-- =====================RIGHT============================= -->
+
+                        <div class="col-4 right">
+                            <h2 id="name">. . .</h2>
+                            <div class="row r-content">
+                                <div class="col-2">
+                                    <i class="bi bi-sunrise"></i>
+                                </div>
+                                <div class="col-10 right-text ">
+                                    <p id="sunrise">sunrise 7:00</p>
+                                </div>
+                                <div class="col-2">
+                                    <i class="bi bi-sunset"></i>
+                                </div>
+                                <div class="col-10 right-text">
+                                    <p id="sunset">sunset 19:20</p>
+                                </div>
+                                <div class="col-2">
+                                    <i class="bi bi-droplet"></i>
+                                </div>
+                                <div class="col-10 right-text">
+                                    <p>60%</p>
+                                </div>
+                                <div class="col-2">
+                                    <i class="bi bi-wind"></i>
+                                </div>
+                                <div class="col-10 right-text">
+                                    <p id="wind">10 km/h</p>
+                                </div>
+                                <div class="col-2">
+                                    <i class="bi bi-compass"></i>
+                                </div>
+                                <div class="col-10 right-text">
+                                    <p id="">North-East</p>
+                                </div>
+                                <div class="col-2">
+                                    <i class="bi bi-arrow-up"></i>
+                                </div>
+                                <div class="col-10 right-text">
+                                    <p>1023.0 mb</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- =====================FOOTER============================= -->
+
+                    <div class="footer">
+                        <div class="day-col">
+                            <img src="https://free.vector6.com/wp-content/uploads/2021/05/PNG-0000001843-png-hieu-ung-anh-sang-mat-troi.png"
+                                alt="">
+                            <p>+25°</p>
+                            <p>Sunday</p>
+                        </div>
+                        <div class="day-col">
+                            <img src="https://thoitiet.app/assets/images/weather-1/02d.png" alt="">
+                            <p>+19°</p>
+                            <p>Monday</p>
+                        </div>
+                        <div class="day-col">
+                            <img src="https://yeuvungtau.com/wp-content/themes/sahifa/images/weather-images/10d.png"
+                                alt="">
+                            <p>+14°</p>
+                            <p>Tuesday</p>
+                        </div>
+                        <div class="day-col">
+                            <img src="https://vinhphuc.gov.vn/ct/cms/Convert/dubaott/PublishingImages/2022137800_rain.png"
+                                alt="">
+                            <p>+12°</p>
+                            <p>Wednesday</p>
+                        </div>
+                        <div class="day-col">
+                            <img src="https://yeuvungtau.com/wp-content/themes/sahifa/images/weather-images/10d.png"
+                                alt="">
+                            <p>+16°</p>
+                            <p>Thursday</p>
+                        </div>
+                        <div class="day-col">
+                            <img src="https://yeuvungtau.com/wp-content/themes/sahifa/images/weather-images/10d.png"
+                                alt="">
+                            <p>+18°</p>
+                            <p>Friday</p>
+                        </div>
+                        <div class="day-col">
+                            <img src="https://free.vector6.com/wp-content/uploads/2021/05/PNG-0000001843-png-hieu-ung-anh-sang-mat-troi.png"
+                                alt="">
+                            <p>+22°</p>
+                            <p>Saturday</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <script type="text/javascript">
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            var rs = this.responseText;
+            // console.log(rs);
+            var data = JSON.parse(rs);
+            console.log(data);
+            var weather = data.weather;
+            console.log(weather);
+            
+            // document.getElementById("ico").innerText = weather.icon;
+            document.getElementById("temp").innerText = data.main.temp + "°";
+            document.getElementById("temp-flike").innerText = "Feels Like "+data.main.feels_like + "°";
+            
+            document.getElementById("des").innerText = weather.description;
+            
+            document.getElementById("wind").innerText = data.wind.speed;
+            document.getElementById("sunrise").innerText ="sunrise:"+ data.sys.sunrise;
+            document.getElementById("sunset").innerText ="sunset:"+ data.sys.sunset;
+            document.getElementById("name").innerText = data.name;
+
+
+
+
+
+        }
+        xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric");
+        xhttp.send();
+
+        /*
+        {"coord":{"lon":105.8412,"lat":21.0245},
+        "weather":[{
+            "id":803,
+            "main":"Clouds",
+            "description":"broken clouds",
+            "icon":"04n"}],
+        
+        "base":"stations",
+
+        "main":{
+                "temp":26,
+                "feels_like":26,
+                "temp_min":26,
+                "temp_max":26,
+                "pressure":1014,
+                "humidity":64,
+                "sea_level":1014,
+                "grnd_level":1012
+                },
+        "visibility":10000,
+
+        "wind":{
+                
+                "speed":5.61,
+                "deg":145,
+                "gust":9.54
+                },
+        "clouds":{"all":83},
+            
+        "dt":1678966202,
+
+        "sys":{
+                "type":1,
+                "id":9308,
+                "country":"VN",
+                "sunrise":1678921501,
+                "sunset":1678964763},
+        
+        "timezone":25200,
+        "id":1581130,
+        "name":"Hanoi",
+        "cod":200}
+                    */
+    </script>
+</body>
+
+</html>
