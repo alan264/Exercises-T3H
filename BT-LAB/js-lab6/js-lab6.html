@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS LAB6</title>
+    <link rel="stylesheet" href="/LIB/bootstrap 5.3/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="js-lab6.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-4 l-logo mt-4 mb-4">
+                            <i class="bi bi-person-square"></i>
+                        </div>
+                        <div class="col-8 mt-4 l-search mb-4">
+                            <div class="row">
+                                <div class="col-11">
+                                    <form action="#" onsubmit="searchProduct()" method="GET" class="d-flex"
+                                        role="search">
+                                        <input id="search" class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                    <!-- <input type="text" class="form-control formsearch"
+                                        id="exampleFormControlInput1" placeholder="Search"> -->
+                                </div>
+                                <div class="col-1">
+                                    <!-- <button type="submit" class="btn btn-primary butt-search"><i
+                                            class="bi bi-search"></i></button> -->
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-7 mb-4">
+                            <div class="row mt-4">
+                                <div class="col-3 r-txt">
+                                    <p>Stats</p>
+                                </div>
+                                <div class="col-3 r-txt">
+                                    <p>Support</p>
+                                </div>
+                                <div class="col-3  r-txt">
+                                    <p>Products</p>
+                                </div>
+                                <div class="col-3  r-txt">
+                                    <p>Payments</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 mb-4">
+                            <div class="row">
+                                <div class="col-6 pt-4 r-logo">
+                                    <i class="bi bi-person-square"></i>
+                                </div>
+                                <div class="col-6 ">
+                                    <div class="row">
+                                        <div class="col-3 logo-card">
+                                            <i class="bi bi-bag"></i>
+                                        </div>
+                                        <div class="col-9 txt-card">
+                                            <p>17 items</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 logo-card">
+                                            <i class="bi bi-currency-dollar"></i>
+                                        </div>
+                                        <div class="col-9 txt-money">
+                                            <p>35$</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================CATEGORYS======================================= -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 giua mt-4">
+                    <div class="row mau">
+                        <div class="col-3 tc-search">
+                            <div class="card-tctk">
+                                <h5>Search preferences</h5>
+                                <p>Price</p>
+                                <hr>
+                                <div class="tk-loca">
+                                    <p>Location</p>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>HaNoi</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="tk-category">
+                                    <p>Category</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Vegetables
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Drinks
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fruits
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-9">
+                            <div class="row main-cate mb-3" id="list">
+                                <!-- <div class="col-4">
+                                    <div class="card-cate">
+                                        <img src="https://fujimart.vn/image/cache/catalog/rau%20cu%20qua/dua-chuot-baby-502x502.png"
+                                            alt="">
+                                        <h5 class="card-title txt-cate">Tomato</h5>
+                                        <h5 class="card-title price-cate">25/kg</h5>
+                                        <p>Sweet klmklca klmcslka</p>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-cate">
+                                        <img src="https://fujimart.vn/image/cache/catalog/san_pham/Ng%C3%B4%20ng%E1%BB%8Dt-502x502.png"
+                                            alt="">
+                                        <h5 class="card-title txt-cate">Corn</h5>
+                                        <h5 class="card-title price-cate">25/kg</h5>
+                                        <p>Sweet klmklca klmcslka</p>
+
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-cate">
+                                        <img src="https://tsf.vn/Upload/product/iqf-carrot-5690.png" alt="">
+                                        <h5 class="card-title txt-cate">Carrot</h5>
+                                        <h5 class="card-title price-cate">25/kg</h5>
+                                        <p>Sweet klmklca klmcslka</p>
+
+                                    </div>
+
+
+
+                                </div> -->
+                            </div>
+                            <div class="row main-cate mb-3">
+                                <!-- <div class="col-4">
+                                    <div class="card-cate">
+                                        <img src="https://fujimart.vn/image/cache/catalog/rau%20cu%20qua/ot%20chuong%20xanh-502x502.png"
+                                            alt="">
+                                        <h5 class="card-title txt-cate">Pepper</h5>
+                                        <h5 class="card-title price-cate">25/kg</h5>
+                                        <p>Sweet klmklca klmcslka</p>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-cate">
+                                        <img src="https://www.biophap.com/wp-content/uploads/2021/01/broccoli.png"
+                                            alt="">
+                                        <h5 class="card-title txt-cate">Cauliflower</h5>
+                                        <h5 class="card-title price-cate">25/kg</h5>
+                                        <p>Sweet klmklca klmcslka</p>
+
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-cate">
+                                        <img src="https://images.squarespace-cdn.com/content/v1/5b5b5824f2e6b10639fdaf09/9c1c5df5-2589-4cdd-b152-16f70888cadf/Produce+Storage+Tips+icons+%281%29.png"
+                                            alt="">
+                                        <h5 class="card-title txt-cate">Garlic</h5>
+                                        <h5 class="card-title price-cate">25/kg</h5>
+                                        <p>Sweet klmklca klmcslka</p>
+
+                                    </div>
+
+
+
+                                </div> -->
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        function searchProduct() {
+            event.preventDefault();         //ngăn form lại
+            var v = document.getElementById("search").value;
+
+            var xhttp = new XMLHttpRequest;
+            xhttp.onload = function () {
+                var rs = this.responseText;
+                var data = JSON.parse(rs);
+                var products = data.products;
+                var html = ``;
+                for (var i = 0; i < products.length; i++) {
+                    var thumb = products[i].thumbnail;
+                    var name = products[i].title;
+                    var desc = products[i].description;
+                    var price = products[i].price;
+                    html += `<div class="col-4">
+                                    <div class="card-cate">
+                                        <img src="${thumb}"
+                                            alt="">
+                                        <h5 class="card-title txt-cate">${name}</h5>
+                                        <h5 class="card-title price-cate">${price}</h5>
+                                        <p>${desc}</p>
+
+                                    </div>
+                                </div>`;
+                    
+                }
+                document.getElementById("list").innerHTML = html;
+
+            }
+            xhttp.open("GET", `https://dummyjson.com/products/search?q=${v}&limit=6`);
+            xhttp.send();
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
