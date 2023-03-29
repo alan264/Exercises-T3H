@@ -288,7 +288,24 @@
             </div>
 
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="quickViewName"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" id="quickViewThumb" class="img-thumbnail" />
+                        <p id="quickViewPrice"></p>
+                        <p id="quickViewCategory"></p>
+                        <div id="cart"></div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
     </section>
     <script type="text/javascript">
         function searchProduct() {
@@ -306,8 +323,8 @@
                     var name = products[i].title;
                     var desc = products[i].description;
                     var price = products[i].price;
-                    html += `<div class="col-4">
-                                    <div class="card-cate">
+                    html += `<div  class="col-4">
+                                    <div onclick="quickView(${id})" class="card-cate">
                                         <img src="${thumb}"
                                             alt="">
                                         <h5 class="card-title txt-cate">${name}</h5>
@@ -316,7 +333,7 @@
 
                                     </div>
                                 </div>`;
-                    
+
                 }
                 document.getElementById("list").innerHTML = html;
 
@@ -324,7 +341,22 @@
             xhttp.open("GET", `https://dummyjson.com/products/search?q=${v}&limit=6`);
             xhttp.send();
         }
-
+        function quickView(x) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                var rs = this.responseText;
+                var data = JSON.parse(rs);
+                var id = data.id;
+                document.getElementById("quickViewName").innerText = data.title;
+                document.getElementById("quickViewCategory").innerText = data.category;
+                document.getElementById("quickViewPrice").innerText = data.price;
+                document.getElementById("quickViewThumb").src = data.thumbnail;
+                var html = `<button type="button" onclick="addToCart(${id})" class="btn btn-danger">Add to cart</button>`;
+                document.getElementById("cart").innerHTML = html;
+            }
+            xhttp.open("GET", `https://dummyjson.com/products/${x}`);
+            xhttp.send();
+        }
 
 
     </script>
